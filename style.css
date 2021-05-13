@@ -194,3 +194,37 @@ body{
      }
 
      
+@media(min-width:1024px){
+    header{
+        height: 5vh;
+    } 
+
+    h1{
+        font-size: 2.5rem;
+    } 
+
+    .game-player>h3, h3  {
+        font-size: 1.6rem;
+    } 
+
+    label{
+        text-align: center;
+        font-size: 1.6rem;
+    } 
+
+    .btn-maquina { 
+        margin-top: 45px; 
+    }
+    .escolha-maquina, .escolha-user  {
+        padding: 15px 10px;
+        font-size: 1.2rem; 
+        margin: 10px;
+      
+    } 
+
+    .show-result{ 
+        max-width: 900px;
+        font-size: 1.8rem;
+        padding: 18px 10px;
+    }
+}

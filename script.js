@@ -115,8 +115,9 @@ let result =array[GerarNumeroRandom(1,4)-1]
 const jogarNovamente = document.querySelector(".jogar-novamente")
 
 jogarNovamente.addEventListener("click" ,function (params) {
-    divUsuario.textContent= `-` 
     divMaquina.textContent =`-`
+    divUsuario.textContent= `-` 
+    
     divResult.textContent="-" 
    
 }) 
