@@ -26,7 +26,7 @@ body{
 }
 
     header{
-        height: 13vh;
+        height: 10vh;
         width: 90vw;
         padding:15px; 
         font-weight: bolder;
@@ -58,7 +58,7 @@ body{
 
 
     .game-card , .point-board{
-        height: 25%;
+        height: 35%;
         width: 90vw;
         margin: 20px auto;
         background-color: var(--primary-color);
@@ -100,9 +100,17 @@ body{
         }
 
         .game-player>h3{color: black;}
-    
+        
+        label{
+            width: 80%;
+            margin: 0 auto;
+            font-size: 15px;
+            margin-bottom: 10px;
+            
+        }
+
         #lista-suspensa{ 
-           width: 60%;
+           width: 120px;
            height: 40px;
            background-color:var(--text-color);
            padding-left: 5px;
@@ -111,6 +119,7 @@ body{
            border: 2px solid var(--primary-color);
            cursor: pointer;
            box-shadow: 3px 5px 4px rgba(36, 4, 4, 0.527);
+           font-weight: 300;
         }  
 
             option,select{
@@ -118,23 +127,27 @@ body{
             }
    
             .btn-maquina{
-            height: 30px;
-            width: 90px;
+            height: 40px;
+            width: 120px;
             display: block;
+            border: 2px solid var(--primary-color);
             border-radius: 8px;
             cursor: pointer;
             box-shadow: 3px 5px 4px rgba(36, 4, 4, 0.527);
+            margin-top: 28px;
             } 
 
      .escolha-maquina, .escolha-user{
-        width:80%;
-        height: 40px;
+        width:90%;
+        height: 50px;
         margin: auto;
         border-radius: 5px;
         background-color:var(--text-color); 
         text-align: center;
-        padding: 5px;
+        padding-left: 5px;
         box-shadow: 3px 5px 4px rgba(36, 4, 4, 0.527);
+        font-size: 13px;
+        
      }  
 
 
@@ -146,7 +159,7 @@ body{
     border-radius: 5px;
     background-color:var(--text-color); 
     box-shadow: 3px 5px 4px rgba(235, 230, 230, 0.527);
-    
+    text-align: center;
     } 
 
     .jogar-novamente{
