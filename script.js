@@ -3,11 +3,11 @@
 const listaSuspensaUser = document.getElementById("lista-suspensa")
 const divUsuario =document.querySelector(".escolha-user")
 let escolhaUsuario = "" 
- let option =listaSuspensaUser.value  
+ let option =listaSuspensaUser.options[listaSuspensaUser.selectedIndex].value
 
 /*variaveis*/
 function verificarUsuario() {
-    let option =listaSuspensaUser.value  
+    let option =listaSuspensaUser.options[listaSuspensaUser.selectedIndex].value
     divUsuario.textContent= `Você escolheu ${option} !` 
     escolhaUsuario=option
     //console.log(option)
@@ -115,10 +115,8 @@ let result =array[GerarNumeroRandom(1,4)-1]
 const jogarNovamente = document.querySelector(".jogar-novamente")
 
 jogarNovamente.addEventListener("click" ,function (params) {
-    divMaquina.textContent =`-`
-    divUsuario.textContent= `-` 
-    
-    divResult.textContent="-" 
+
+    document.location.reload(true);
    
 }) 
 
