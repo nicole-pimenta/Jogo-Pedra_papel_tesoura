@@ -3,7 +3,7 @@
 const listaSuspensaUser = document.getElementById("lista-suspensa")
 const divUsuario =document.querySelector(".escolha-user")
 let escolhaUsuario = "" 
- let option =listaSuspensaUser.options[listaSuspensaUser.selectedIndex].value
+let option =listaSuspensaUser.options[listaSuspensaUser.selectedIndex].value
 
 /*variaveis*/
 function verificarUsuario() {
@@ -90,44 +90,29 @@ function mostrarNaDiv () {
 }
   
     /*MAQUINA*/  
-/*variaveis*/
 const btnMaquina = document.getElementById("btn__maquina") 
 const divMaquina = document.getElementById("escolha-maquina") 
 let escolhaMaquina = ""
 
-function GerarNumeroRandom (min,max){
-    return Math.floor(Math.random() * (max-min) + min)
-   }
+const GerarNumeroRandom = (min,max) => Math.floor(Math.random() * (max-min) + min)
 
-btnMaquina.addEventListener("click",function(){ 
+btnMaquina.addEventListener("click",function() { 
 let array =["papel","tesoura","pedra"]  
 
-let result =array[GerarNumeroRandom(1,4)-1]
-    divMaquina.textContent =`A máquina escolheu ${result} !`
-    escolhaMaquina=result
-    mostrarNaDiv()
-
+let result =array[GerarNumeroRandom(1,4)-1] 
+divMaquina.textContent=`A máquina escolheu ${result} !`
+escolhaMaquina=result 
+//divMaquina.style.background="black"
+ mostrarNaDiv()
 }) 
-
 
  /*reset*/  
 
 const jogarNovamente = document.querySelector(".jogar-novamente")
 
 jogarNovamente.addEventListener("click" ,function (params) {
-
     document.location.reload(true);
-   
 }) 
 
- /*QUADRO PONTOS*/  
-
- let userPoint = document.getElementById("user-result")
-
- function points () {
-    if( divResult.textContent==="A máquina ganhou!"){
-        userPoint.textContent= "1"
-    }
- }
 
 

@@ -148,7 +148,13 @@ body{
         box-shadow: 3px 5px 4px rgba(36, 4, 4, 0.527);
         font-size: 13px;
         
-     }  
+        
+     }   
+
+     .rotated {
+         /* Equal to rotateZ(45deg) */
+        
+      }
 
 
 /*SHOW RESULT*/ 
